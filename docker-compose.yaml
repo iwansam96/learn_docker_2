@@ -16,7 +16,8 @@ services:
   mongo-express:
     image: mongo-express
     # fixes MongoNetworkError when mongodb is not ready when mongo-express starts
-    depends_on: mongodb
+    depends_on: 
+      - mongodb
     ports:
       - 8080:8081
     environment:
