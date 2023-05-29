@@ -44,6 +44,8 @@ Step 7: Access you nodejs application UI from browser
 
 #### To start the application
 
+docker-compose takes care of creating a common network so we don't need to create this manually
+
 Step 1: start mongodb and mongo-express
 
     docker-compose -f docker-compose.yaml up
